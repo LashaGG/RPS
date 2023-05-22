@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock_Paper_scissors</title>
+    <style>
+        img {
+            width: 600px;
+            height: auto;
+        }
+
+        body {
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+<button onclick="alr(0)"><img src="rock-removebg-preview.png"></button>
+<button onclick="alr(1)"><img src="paper-removebg-preview.png"></button>
+<button onclick="alr(2)"><img src="scissors-removebg-preview.png"></button>
+
+
+<script>
+
+    function alr(player) {
+
+
+        let opponent = Math.floor(Math.random() * 3);
+
+        if (player === opponent) alert("Draw");
+
+        else if (player === 0 && opponent === 2) {
+            alert("Win");
+        } else if (player === 1 && opponent === 0) {
+            alert("Win");
+
+        } else if (player === 2 && opponent === 1) {
+            alert("Win");
+        } else alert("Lose");
+
+
+    }
+
+
+</script>
+
+
+</body>
+</html>
